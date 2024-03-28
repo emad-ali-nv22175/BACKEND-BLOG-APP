@@ -1,9 +1,3 @@
-import { uploadPicture } from "../middleware/uploadPictureMiddleware";
-import Comment from "../models/Comment";
-import Post from "../models/Post";
-import User from "../models/User";
-import { fileRemover } from "../utils/fileRemover";
-
 const registerUser = async (req, res, next) => {
   try {
     const { name, email, password } = req.body;
